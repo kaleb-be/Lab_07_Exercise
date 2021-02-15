@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Async Demo Project</title>
+    <!-- Semantic CDN -->
+    <link rel="stylesheet" href="./asset/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" integrity="sha512-8bHTC73gkZ7rZ7vpqUQThUDhqcNFyYi2xgDgPDHc+GXVGHXq+xPjynxIopALmOPqzo9JZj0k6OqqewdGO3EsrQ==" crossorigin="anonymous" />
+</head>
+
+<body>
+
+    <!-- Navigation  -->
+    <div class="ui top attached tabular menu">
+        <a class="item" href="index.html">
+          Home
+        </a>
+        <a class="item active" href="api.html">
+            API
+        </a>
+
+        <div class="right menu">
+            <div class="item">
+                <div class="ui transparent icon input">
+                    <input type="text" placeholder="Search users..." data-np-checked="1" id="search">
+                    <i class="search link icon"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="ui bottom attached segment">
+        <p></p>
+    </div>
+
+    <div class="ui container">
+
+        <div class="ui message">
+            <div class="clock">
+                <div class="hand hour" data-hour-hand></div>
+                <div class="hand minute" data-minute-hand></div>
+                <div class="hand second" data-second-hand></div>
+                <div class="number number1">*</div>
+                <div class="number number2">*</div>
+                <div class="number number3">*</div>
+                <div class="number number4">*</div>
+                <div class="number number5">*</div>
+                <div class="number number6">*</div>
+                <div class="number number7">*</div>
+                <div class="number number8">*</div>
+                <div class="number number9">*</div>
+                <div class="number number10">*</div>
+                <div class="number number11">*</div>
+                <div class="number number12">*</div>
+            </div>
+            <div class="header cTime pb-5">
+                Current Time
+            </div>
+
+            <p class="cTime pb-5" id="timerDemo">TIme Will Load Here ...</p>
+
+        </div>
+        <!-- All Blogs  -->
+        <div class="ui top attached segment">
+
+            <div class="ui green message">
+                <i class="star icon"></i> All Blogs From JSON placeholder API
+            </div>
+            <div class="ui divided items" id="thePosts">
+                <!-- Content here  -->
+                <div class="ui segment spinner" style="padding: 5em;">
+                    <div class="ui active inverted dimmer">
+                        <div class="ui text loader">Loading</div>
+                    </div>
+                    <p></p>
+                </div>
+            </div>
+
+
+        </div>
+        <!-- End of All Blogs  -->
+        <!--   End of Container    -->
+
+
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js" integrity="sha512-dqw6X88iGgZlTsONxZK9ePmJEFrmHwpuMrsUChjAw1mRUhUITE5QU9pkcSox+ynfLhL15Sv2al5A0LVyDCmtUw==" crossorigin="anonymous"></script>
+
+        <!-- Our Scripts  -->
+        <script src="./asset/js/timer.js"></script>
+        <script src="./asset/js/loadPostsAPI.js"></script>
+
+</body>
+
+</html>
