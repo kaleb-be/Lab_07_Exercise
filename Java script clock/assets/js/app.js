@@ -1,3 +1,8 @@
+function addZero(i) {
+    if (i < 10) { i = "0" + i } // add zero in front of numbers < 10
+    return i;
+}
+
 setInterval(setClock, 1000);
 
 const hrHand = document.querySelector("[data-hour-hand]");
@@ -17,4 +22,4 @@ function setClock() {
 function setRotation(element, rotationRatio) {
     element.style.setProperty("--rotation", rotationRatio * 360);
 }
-setClock()
+setClock();

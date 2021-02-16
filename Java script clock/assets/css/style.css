@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: aquamarine;
+    background: radial-gradient(#e9e2e2, #68686d);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,8 +15,8 @@ body {
 }
 
 .clock {
-    width: 300px;
-    height: 300px;
+    width: 600px;
+    height: 600px;
     background-color: rgba(255, 255, 255, 0.7);
     border-radius: 50%;
     border: 2px solid black;
